@@ -17,7 +17,6 @@ class operacion extends StatelessWidget {
       child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Value'),
           ElevatedButton(onPressed: null, child: Text('Increment'))
         ],
       ),
