@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class W1 extends StatelessWidget {
-  const W1({
-    super.key,
-  });
+import '../controllers/dificultad.dart';
+
+
+class operacion extends StatelessWidget {
+  const operacion({super.key,});
 
   @override
   Widget build(BuildContext context) {
+    dificultad controller = Get.find();
+
+
     return Container(
       color: Colors.amber,
       child: const Column(
