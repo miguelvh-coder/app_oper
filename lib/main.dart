@@ -1,7 +1,7 @@
 import 'package:app_oper/ui/controllers/dificultad.dart';
 import 'package:app_oper/ui/controllers/result_writer.dart';
-import 'package:app_oper/ui/controllers/authentication_controller.dart';
-import 'package:app_oper/ui/controllers/user_controller.dart';
+//import 'package:app_oper/ui/controllers/authentication_controller.dart';
+//import 'package:app_oper/ui/controllers/user_controller.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -11,17 +11,17 @@ import 'package:app_oper/ui/central.dart';
 import 'ui/pages/content/pregunta.dart';
 
 void main() {
+
   Loggy.initLoggy(
     logPrinter: const PrettyPrinter(
       showColors: true,
     ),
   );
-
-
+  
   Get.put(result_writer());
   Get.put(dificultad());
-  Get.put(AuthenticationController());
-  Get.put(UserController());
+  //Get.put(AuthenticationController());
+  //Get.put(UserController());
   runApp(const MyApp());
 }
 
