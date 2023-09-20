@@ -2,8 +2,8 @@ import 'package:app_oper/ui/controllers/dificultad.dart';
 import 'package:app_oper/ui/controllers/result_writer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'ui/pages/inicio.dart';
-import 'ui/pages/pregunta.dart';
+import 'package:app_oper/ui/central.dart';
+import 'ui/pages/content/pregunta.dart';
 
 void main() {
   Get.put(result_writer());
@@ -28,7 +28,8 @@ class MyApp extends StatelessWidget {
             backgroundColor: Theme.of(context).colorScheme.inversePrimary,
             title: const Text('app_oper Demo'),
           ),
-          body: const CalculatorApp(),
+          //body: const Central(),    //ir a la pagina de inicio
+          body: const CalculatorApp(),   //ir a la pagina de inicio
         ));
   }
 }
